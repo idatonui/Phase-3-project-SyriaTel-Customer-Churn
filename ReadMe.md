@@ -56,11 +56,17 @@ XGBoost: Initially, this model achieved perfect accuracy (100%) on the training 
 
 Choosing the best model depends on your specific business priorities. If it's critical to minimize customer churn, the Decision Tree or Random Forest might be a good choice. If overall accuracy and precision for both categories are most important, the Random Forest or XGBoost could be better options.
 
-![Alternative text](C:\Users\Administrator\Desktop\Phase 3 project\Phase-3-project-SyriaTel-Customer-Churn\output 1.png "Confusion Matrix")
+![Alternative text](https://github.com/idatonui/Phase-3-project-SyriaTel-Customer-Churn/blob/main/images/output%201.png")
 
-![Alternative text](output 2.png "Feature Importance")
+![Alternative text](https://github.com/idatonui/Phase-3-project-SyriaTel-Customer-Churn/blob/main/images/output%202.png)
 
-![Alternative text](C:\Users\Administrator\Desktop\Phase 3 project\Phase-3-project-SyriaTel-Customer-Churn\output.png "Feature Importance")
+![Alternative text](https://github.com/idatonui/Phase-3-project-SyriaTel-Customer-Churn/blob/main/images/output%203.png)
+
+![Alternative text](https://github.com/idatonui/Phase-3-project-SyriaTel-Customer-Churn/blob/main/images/output%204.png)
+
+![Alternative text](https://github.com/idatonui/Phase-3-project-SyriaTel-Customer-Churn/blob/main/images/output%205.png)
+
+![Alternative text](https://github.com/idatonui/Phase-3-project-SyriaTel-Customer-Churn/blob/main/images/output%206.png)
 
 ## Conclusion
 The XGBoost model was a bit too focused on remembering every detail from the training data (100% training accuracy). This might make it struggle with completely new customers (overfitting).
