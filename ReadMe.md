@@ -41,6 +41,16 @@ These features provide a comprehensive view of various aspects of customer inter
 
 This analysis included meticulous checks for missing values and duplicates to guarantee data integrity. Feature engineering was employed to create new features potentially relevant to churn prediction, enriching the available data.  Furthermore, phone numbers were established as the index, facilitating efficient customer identification and data manipulation. Outlier detection and multicollinearity analysis were conducted to identify and address any anomalies or redundant features that could negatively impact model performance. Through these comprehensive data preparation steps, a robust and informative dataset was established, ready for further analysis and model development.
 
+## 4. Data Analysis
+
+
+![Alternative text](https://github.com/idatonui/Phase-3-project-SyriaTel-Customer-Churn/blob/main/images/output%203.png)
+
+
+![Alternative text](https://github.com/idatonui/Phase-3-project-SyriaTel-Customer-Churn/blob/main/images/output%205.png)
+
+
+
 ## 4. Modeling
 During the analysis, various machine learning models were investigated to predict customer churn for SyriaTel. Each model's performance was evaluated on unseen data to assess its effectiveness in real-world scenarios.
 
@@ -56,17 +66,17 @@ XGBoost: Initially, this model achieved perfect accuracy (100%) on the training 
 
 Choosing the best model depends on your specific business priorities. If it's critical to minimize customer churn, the Decision Tree or Random Forest might be a good choice. If overall accuracy and precision for both categories are most important, the Random Forest or XGBoost could be better options.
 
-![Alternative text](https://github.com/idatonui/Phase-3-project-SyriaTel-Customer-Churn/blob/main/images/output%201.png")
 
-![Alternative text](https://github.com/idatonui/Phase-3-project-SyriaTel-Customer-Churn/blob/main/images/output%202.png)
-
-![Alternative text](https://github.com/idatonui/Phase-3-project-SyriaTel-Customer-Churn/blob/main/images/output%203.png)
-
+### 1. Confusion Matrix
 ![Alternative text](https://github.com/idatonui/Phase-3-project-SyriaTel-Customer-Churn/blob/main/images/output%204.png)
 
-![Alternative text](https://github.com/idatonui/Phase-3-project-SyriaTel-Customer-Churn/blob/main/images/output%205.png)
 
+### 2. Model Performance
 ![Alternative text](https://github.com/idatonui/Phase-3-project-SyriaTel-Customer-Churn/blob/main/images/output%206.png)
+
+### 3. Feature Importance
+![Alternative text](https://github.com/idatonui/Phase-3-project-SyriaTel-Customer-Churn/blob/main/images/output.png)
+
 
 ## Conclusion
 The XGBoost model was a bit too focused on remembering every detail from the training data (100% training accuracy). This might make it struggle with completely new customers (overfitting).
