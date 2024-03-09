@@ -2,7 +2,7 @@
 
 
 ## Business Problem 
-SyriaTel, a leading telecommunications provider, faces a critical challenge in mitigating customer churn within its subscriber base. The company seeks to address the increasing attrition rates observed among its clientele. Identifying the underlying factors driving customer defection and implementing proactive strategies to retain valuable subscribers are imperative to sustain profitability and competitiveness in the telecommunications industry. Therefore, there is a pressing need to develop robust predictive models and actionable insights to effectively manage and reduce customer churn rates, thereby optimizing customer retention efforts and enhancing overall business performance.
+SyriaTel, a leading mobile telecommunication provider, that faces a critical challenge in mitigating customer churn within its subscriber base. The company seeks to address the increasing attrition rates observed among its clientele. Identifying the underlying factors driving customer defection and implementing proactive strategies to retain valuable subscribers are imperative to sustain profitability and competitiveness in the telecommunications industry. Therefore, there is a pressing need to develop robust predictive models and actionable insights to effectively manage and reduce customer churn rates, thereby optimizing customer retention efforts and enhancing overall business performance.
 
 
 
@@ -13,14 +13,6 @@ Stakeholders involved in this project include
 * Syriatel Mobile Telecom
 * Shareholders
 * Employees
-* Customers. 
-
-The SyriaTel Customer Churn project addresses a critical challenge faced by telecommunications companies globally: customer churn. Churn, the rate at which customers terminate their services, presents a significant obstacle to the profitability and sustainability of telecom providers. SyriaTel, grappling with escalating churn rates among its subscriber base, recognizes the urgency of implementing effective strategies to curb attrition and bolster customer retention.
-
-Stakeholders in this project include:
-* SyriaTel Mobile Telecom, 
-* Shareholders, 
-* Employees, and 
 * Customers. 
 
 For SyriaTel, reducing churn directly impacts profitability by retaining valuable subscribers and sustaining long-term revenue streams. Moreover, satisfied customers are more inclined to advocate for the company, enhancing its brand image and market reputation. Customers benefit from improved services and reduced churn, experiencing enhanced satisfaction and uninterrupted connectivity.
@@ -40,36 +32,10 @@ The SyriaTel Customer Churn project holds significant implications for both the 
 ## 2. Data Understanding
 The dataset was obtained from Kaggle and it comprises 3333 rows and 21 columns. The dataset for the SyriaTel Customer Churn project comprises several features that provide valuable insights into customer behavior and engagement with SyriaTel's telecommunications services. 
 
-These features include:
-
-* **State:** The state in which the customer resides.
-* **Account_Length:** The length of time the customer has been an active subscriber.
-* **Area_Code:** The area code associated with the customer's phone number.
-* **Phone_Number:** The unique identifier for each customer's phone number.
-* **International_Plan:** A binary indicator of whether the customer has an international calling plan.
-* **Voice_Mail_Plan:** A binary indicator of whether the customer has a voicemail plan.
-* **Number_Vmail_Messages:** The number of voicemail messages received by the customer.
-* **Total_Day_Minutes:** The total number of minutes the customer used during daytime hours.
-* **Total_Day_Calls:** The total number of calls made by the customer during daytime hours.
-* **Total_Day_Charge:** The total charges incurred by the customer for daytime usage.
-* **Total_Eve_Minutes:** The total number of minutes the customer used during evening hours.
-* **Total_Eve_Calls:** The total number of calls made by the customer during evening hours.
-* **Total_Eve_Charge:** The total charges incurred by the customer for evening usage.
-* **Total_Night_Minutes:** The total number of minutes the customer used during nighttime hours.
-* **Total_Night_Calls:** The total number of calls made by the customer during nighttime hours.
-* **Total_Night_Charge:** The total charges incurred by the customer for nighttime usage.
-* **Total_Intl_Minutes:** The total number of international minutes used by the customer.
-* **Total_Intl_Calls:** The total number of international calls made by the customer.
-* **Total_Intl_Charge:** The total charges incurred by the customer for international usage.
-* **Customer_Service_Calls:** The number of customer service calls made by the customer.
-* **Churn:** The target variable indicating whether the customer churned (discontinued service) or not.
+These features include:State, Account_Length, Area_Code, Phone_Number, International_Plan, Voice_Mail_Plan, Number_Vmail_Messages, Total_Day_Minutes, Total_Day_Calls, Total_Day_Charge, Total_Eve_Minutes, Total_Eve_Calls, Total_Eve_Charge, Total_Night_Minutes, Total_Night_Calls, Total_Night_Charge, Total_Intl_Minutes, Total_Intl_Calls, Total_Intl_Charge, Customer_Service_Calls, Churn.
 
 These features provide a comprehensive view of various aspects of customer interaction with SyriaTel's services, including usage patterns, plan subscriptions, and customer service engagement. Analyzing these features will facilitate the identification of key drivers of churn and the development of predictive models to mitigate customer attrition.
 
-Limitations of the data that have implications for the project include:
-1. Lack of additional demographic or behavioral data: The dataset primarily focuses on usage patterns and service subscriptions but does not include demographic information or detailed behavioral data, which could provide further insights into churn behavior.
-2. Potential bias: The dataset may suffer from selection bias if it does not represent the entire customer population of SyriaTel or if certain segments of customers are overrepresented.
-3. Data quality issues: There could be missing or erroneous data in the dataset, which may affect the accuracy and reliability of predictive models. Additionally, the dataset's timestamp is not mentioned, which could affect the temporal analysis of churn behavior.
 
 ## 3. Data Preparation
 
@@ -90,7 +56,11 @@ XGBoost: Initially, this model achieved perfect accuracy (100%) on the training 
 
 Choosing the best model depends on your specific business priorities. If it's critical to minimize customer churn, the Decision Tree or Random Forest might be a good choice. If overall accuracy and precision for both categories are most important, the Random Forest or XGBoost could be better options.
 
+![Alternative text](C:\Users\Administrator\Desktop\Phase 3 project\Phase-3-project-SyriaTel-Customer-Churn\output 1.png "Confusion Matrix")
 
+![Alternative text](output 2.png "Feature Importance")
+
+![Alternative text](C:\Users\Administrator\Desktop\Phase 3 project\Phase-3-project-SyriaTel-Customer-Churn\output.png "Feature Importance")
 
 ## Conclusion
 The XGBoost model was a bit too focused on remembering every detail from the training data (100% training accuracy). This might make it struggle with completely new customers (overfitting).
