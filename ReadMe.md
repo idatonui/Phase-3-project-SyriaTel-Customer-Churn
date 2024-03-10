@@ -64,20 +64,22 @@ It’s important to note that churn rate can be influenced by a number of factor
 
 Each of these machine learning models has its strengths and weaknesses when it comes to predicting customer churn for SyriaTel. Let's delve into how each model can help solve the real-world problem and any improvements that can be made:
 
-Logistic Regression:
+### 1. Logistic Regression:
 
 Strengths: Logistic Regression offers a good balance between simplicity and performance. Its interpretability makes it easy to understand which features are driving the predictions. Despite struggling with precision for churning customers, its overall accuracy of 77% is respectable.
 Improvements: Addressing the imbalance in handling the two customer churn categories could improve the model's performance. Techniques like adjusting class weights or using different evaluation metrics tailored to the specific problem, such as F1-score or Area Under the Receiver Operating Characteristic Curve (ROC AUC), could be explored.
 
-Decision Tree:
+### 2. Decision Tree:
 
 Strengths: Decision Trees are intuitive and easy to interpret. They can handle both numerical and categorical data, making them versatile for various datasets. With an accuracy of 80%, this model prioritizes capturing non-churning customers, which could be beneficial if retaining existing customers is a priority.
 Improvements: While prioritizing non-churning customers is valuable, efforts could be made to reduce misclassifications of churning customers. Techniques like pruning the tree or using ensemble methods like Random Forests could help improve overall performance.
-Random Forest:
+
+### 3. Random Forest:
 
 Strengths: Random Forests are an ensemble learning method that combines multiple decision trees to improve predictive performance. With the highest accuracy of 92% and balanced precision for both churn categories, this model excels at accurately identifying both churning and non-churning customers.
 Improvements: Despite its high performance, there might still be room for improvement by fine-tuning hyperparameters or exploring other ensemble methods like Gradient Boosting Machines (GBM) or Extreme Gradient Boosting (XGBoost).
-XGBoost:
+
+### 4. XGBoost:
 
 Strengths: XGBoost is a powerful gradient boosting algorithm known for its speed and performance. Despite initially showing signs of overfitting, adjustments made through techniques like Grid Search resulted in a well-balanced model with high accuracy (95.43% on unseen data). Its ability to handle complex relationships between features makes it a strong contender for solving real-world churn prediction problems.
 Improvements: While the model's performance is impressive, continuous monitoring and refinement of hyperparameters to prevent overfitting in production environments could further enhance its robustness.
