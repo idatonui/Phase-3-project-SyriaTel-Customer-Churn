@@ -51,7 +51,7 @@ This analysis included meticulous checks for missing values and duplicates to gu
 
 
 
-## 4. Modeling
+## 5. Modeling
 During the analysis, various machine learning models were investigated to predict customer churn for SyriaTel. Each model's performance was evaluated on unseen data to assess its effectiveness in real-world scenarios.
 
 Here's a summary of the findings for each model:
