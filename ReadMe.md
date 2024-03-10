@@ -45,6 +45,8 @@ This analysis included meticulous checks for missing values and duplicates to gu
 
 
 ![Alternative text](https://github.com/idatonui/Phase-3-project-SyriaTel-Customer-Churn/blob/main/images/output%203.png)
+
+
 In the chart above, there are two categories: churn and not churn.  The vast majority of the data points, 86.1%, fall under not churn, while only 13.9% fall under churn.
 
 It’s important to note that churn rates vary greatly depending on the industry. 
