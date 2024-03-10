@@ -45,24 +45,42 @@ This analysis included meticulous checks for missing values and duplicates to gu
 
 
 ![Alternative text](https://github.com/idatonui/Phase-3-project-SyriaTel-Customer-Churn/blob/main/images/output%203.png)
+In the chart above, there are two categories: churn and not churn.  The vast majority of the data points, 86.1%, fall under not churn, while only 13.9% fall under churn.
+
+It’s important to note that churn rates vary greatly depending on the industry. 
+
+There are a number of reasons why a customer might churn, including poor customer service, a lack of features, or a high price point. Businesses can take steps to reduce churn, such as offering discounts, improving customer service, or adding new features
 
 
 ![Alternative text](https://github.com/idatonui/Phase-3-project-SyriaTel-Customer-Churn/blob/main/images/output%205.png)
 
+The chart above shows the churn rate by area code.
 
+It’s important to note that churn rate can be influenced by a number of factors, including demographics, competition, and the overall satisfaction with the service. Businesses can segment their customer base by area code to identify areas with high churn rates and develop targeted strategies to win back those customers.
 
 ## 5. Modeling
-During the analysis, various machine learning models were investigated to predict customer churn for SyriaTel. Each model's performance was evaluated on unseen data to assess its effectiveness in real-world scenarios.
 
-Here's a summary of the findings for each model:
+Each of these machine learning models has its strengths and weaknesses when it comes to predicting customer churn for SyriaTel. Let's delve into how each model can help solve the real-world problem and any improvements that can be made:
 
-Logistic Regression: This model achieved good accuracy (77%) but showed an imbalance in handling the two customer churn categories (0 and 1). It excelled at correctly identifying and capturing most non-churning customers (class 0) but struggled with precision for churning customers (class 1).
+Logistic Regression:
 
-Decision Tree: This model offered similar overall accuracy (80%) but prioritized capturing non-churning customers (high recall) at the expense of misclassifying some churning customers. This might be preferable if it's crucial to retain existing customers, even if it means some false positives (non-churning customers identified as churning).
+Strengths: Logistic Regression offers a good balance between simplicity and performance. Its interpretability makes it easy to understand which features are driving the predictions. Despite struggling with precision for churning customers, its overall accuracy of 77% is respectable.
+Improvements: Addressing the imbalance in handling the two customer churn categories could improve the model's performance. Techniques like adjusting class weights or using different evaluation metrics tailored to the specific problem, such as F1-score or Area Under the Receiver Operating Characteristic Curve (ROC AUC), could be explored.
 
-Random Forest: This model outperformed the previous two with the highest accuracy (92%) and a more balanced approach to both customer churn categories. It achieved high precision for both classes, meaning it accurately identified churning and non-churning customers, but like the Decision Tree, it missed a portion of the churning customers.
+Decision Tree:
 
-XGBoost: Initially, this model achieved perfect accuracy (100%) on the training data, but this raised a potential for overfitting. Overfitting means the model memorized the training data too well and might not perform as well on completely new data.  However, by adjusting model parameters through a technique called Grid Search, we were able to achieve a good balance between training and validation accuracy (99.29% and 95.43% respectively). This suggests the model is less likely to overfit while still performing well on unseen data.
+Strengths: Decision Trees are intuitive and easy to interpret. They can handle both numerical and categorical data, making them versatile for various datasets. With an accuracy of 80%, this model prioritizes capturing non-churning customers, which could be beneficial if retaining existing customers is a priority.
+Improvements: While prioritizing non-churning customers is valuable, efforts could be made to reduce misclassifications of churning customers. Techniques like pruning the tree or using ensemble methods like Random Forests could help improve overall performance.
+Random Forest:
+
+Strengths: Random Forests are an ensemble learning method that combines multiple decision trees to improve predictive performance. With the highest accuracy of 92% and balanced precision for both churn categories, this model excels at accurately identifying both churning and non-churning customers.
+Improvements: Despite its high performance, there might still be room for improvement by fine-tuning hyperparameters or exploring other ensemble methods like Gradient Boosting Machines (GBM) or Extreme Gradient Boosting (XGBoost).
+XGBoost:
+
+Strengths: XGBoost is a powerful gradient boosting algorithm known for its speed and performance. Despite initially showing signs of overfitting, adjustments made through techniques like Grid Search resulted in a well-balanced model with high accuracy (95.43% on unseen data). Its ability to handle complex relationships between features makes it a strong contender for solving real-world churn prediction problems.
+Improvements: While the model's performance is impressive, continuous monitoring and refinement of hyperparameters to prevent overfitting in production environments could further enhance its robustness.
+
+Each model offers unique advantages and considerations for solving the real-world problem of predicting customer churn. By understanding their strengths and weaknesses and implementing appropriate improvements, SyriaTel can make informed decisions to mitigate churn and retain valuable customers.
 
 Choosing the best model depends on your specific business priorities. If it's critical to minimize customer churn, the Decision Tree or Random Forest might be a good choice. If overall accuracy and precision for both categories are most important, the Random Forest or XGBoost could be better options.
 
